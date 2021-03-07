@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+#main-container{
+    display:flex;
+}
+#side-bar{
+    width:280px;
+    background-color: #F6F2E6;
+    min-height:100vh;
+    color:#6C7A9B;
+    position:fixed;
+    top:0;
+    left:0;
+}
+#task-section{
+    width:calc(100% - 280px - 320px);
+    background-color:#163631 ;
+    min-height:100vh;
+    margin-left:280px;
+}
+#meeting-section{
+    width:320px;
+    background-color: #FFFCF9;
+    min-height:100vh;
+}
+#mail-checking-list,#personal-plannings,#work-plannings{
+    margin:40px 40px 70px 55px;
+    color: #6C7A78;
+}
+.check-lists{
+        margin-bottom:10px;
+}
+#personal-plannings>.check-lists:first-child{
+    color:#FD7F77;
+}
+#work-plannings >.check-lists:first-child {
+    color:#39C8B1;
+}
+.sidebar-icons{
+    margin-right: 20px;
+}
+#plus-bttn{
+    font-size: 18px;
+    margin-left:55px;
+    background-color: #FF4E48;
+    border:none;
+    box-shadow: 1px 2px 6px grey;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.plus-icon{
+    color:white;
+    padding:13px 7px;
+}
+h1{
+    color:white;
+    font-weight: 600;
+    margin:40px 0px 10px 65px;
+}
+#todo-list{
+    display:flex;
+    color:#84A39E;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #84A39E;
+}
+.number{
+    background-color: #2C574E;
+    color:white;
+    padding:3px 12px;
+    border-radius:10px;
+    margin-right: 6px;
+}
+.todo-options{
+    width:25%;
+    cursor: pointer;
+    font-size: 18px;
+    padding-top:40px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+ .todo-options:first-child{
+     padding-left:20px;
+}
+.todo-options:last-child{
+    padding-right:20px;
+}
+.todo-options:active,.todo-options:nth-child(2){
+    color: #D44944; 
+    border-bottom:3px solid #D44944;  
+}
+.approving-process{
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 20px;
+    color:#597571;
+    width:100%;
+}
+p{
+    width:340px;
+}
+.approved,.in-progress,.in-review,.waiting{
+    width:110px;
+    padding:1px 20px;
+    border:none;
+    background-color: #01C969;
+    color:white;
+    border-radius:20px;
+    margin: 10px 0px;
+}
+.in-progress{
+    background-color:#553536 ;
+    color:#C34223;
+}
+.in-review{
+    background-color:#564835 ;
+    color:#C69412;
+}
+.waiting{
+    background-color: #1A423A;
+    color:#91b4af;
+}
+.check-box{
+    margin:10px;
+    display:inline-block;
+    background-color: #163631;
+    width:20px;height:20px;
+    position: relative;
+    transition:background-color 0.4s;
+    border:2px solid #3A5F58;
+    border-radius:5px;
+}
+#check1:checked ~ .check-box,#check2:checked ~ .check-box,#check3:checked ~ .check-box,#check4:checked ~ .check-box,#check5:checked ~ .check-box,#check6:checked ~ .check-box{
+    background-color:#D44944;
+}
+.check-box::after{
+    content: "";
+    position: absolute;
+    display:inline-block;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    width:5px;height:12px;
+    top:5%;
+    left:26%;
+    transform:rotate(35deg);
+    opacity:0;
+    transition:all 0.4s;
+}
+#check1:checked ~ .check-box::after,#check2:checked ~ .check-box::after,#check3:checked ~ .check-box::after,#check4:checked ~ .check-box::after,#check5:checked ~ .check-box::after,#check6:checked ~ .check-box::after{
+    opacity:1;
+}
+#upcoming-taskbar{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    margin:15px;
+    color:white;
+    border-bottom: 3px solid #597571;
+}
+.upcoming-icon{
+    height:16px;
+    padding-top: 35px;
+    padding-right:30px;
+}
+
+
+
+
+.contact-icon{
+    margin:40px 10px 20px 190px;
+    font-size:20px;
+}
+#buttn5{
+       background-color:#E6A389;
+       color:white;
+       border:none;
+       font-size:25px;
+       margin-left: 15px;
+       padding:7px 17px;
+       border-radius:10px;
+       box-shadow:1px 2px 6px grey;
+}
+h2{
+    margin-left:20px;
+}
+.meeting-card{
+    padding:20px 30px;
+    margin:20px;
+    box-sizing: border-box;
+    background-color: #FFF1D6;
+    border-radius: 15px;
+}
+.meeting-timing{
+    font-size:12px;
+    margin:0px 60px 0px 0px;color:#9E9078;
+}
+.meeting-title{
+    font-size:14px;
+    color:#9E9078;
+}
+.users{
+    width:30px; height:30px;
+    border-radius:15px;
+    margin-right:10px;
+}
+.meeting-card:nth-child(4n+1){
+    background-color:#FFF1D6;
+}
+.meeting-card:nth-child(4n+2){
+    background-color:#D1E5FE;
+}
+.meeting-card:nth-child(4n+3){
+    background-color:#FFD8D9;
+}
+.meeting-card:nth-child(4n+4){
+    background-color:#D8FFE2;
+    
+}
+.meeting-card:nth-child(4n+1)>.meeting-timing,.meeting-card:nth-child(4n+1)>.meeting-title{
+      color:#C5B390;
+}
+.meeting-card:nth-child(4n+2)>.meeting-timing,.meeting-card:nth-child(4n+2)>.meeting-title{
+    color:#869AB3;
+}
+.meeting-card:nth-child(4n+3)>.meeting-timing,.meeting-card:nth-child(4n+3)>.meeting-title{
+    color:#C59693;
+}
+.meeting-card:nth-child(4n+4)>.meeting-timing,.meeting-card:nth-child(4n+4)>.meeting-title{
+    color:#B0DEC0;
+}
+#joining-status,#members-status{
+    border:none;
+    border-radius:20px;
+    padding:10px 20px;
+    background-color:#F0F7FF;
+    color:#8A9BA6;
+    
+}
+.joining-line{
+    display:flex;align-content: center;
+}
+.meeting-card>#members-status{
+    padding:10px 30px;
+}

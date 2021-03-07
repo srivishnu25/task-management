@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>task-management</title>
+        <link rel="stylesheet" href="./index.css" type="text/css">
+        <script src="https://kit.fontawesome.com/1fda83ce5d.js" crossorigin="anonymous"></script>
+      </head>
+   <body>
+     <div id="main-container">
+       <div id="side-bar">
+         <div id="mail-checking-list">
+           <div class="check-lists"><i class="fas fa-inbox sidebar-icons"></i>Inbox</div>
+           <div class="check-lists"><i class="fas fa-star sidebar-icons"></i>Today</div>
+           <div class="check-lists"><i class="far fa-calendar sidebar-icons"></i>Upcoming</div>
+           <div class="check-lists"><i class="far fa-calendar sidebar-icons"></i>Anytime</div>
+           <div class="check-lists"><i class="fas fa-clipboard sidebar-icons"></i>Someday</div>
+           <div class="check-lists"><i class="fas fa-trash-alt sidebar-icons"></i>Trash</div>
+         </div>
+         <div id="personal-plannings">
+          <div class="check-lists"><i class="far fa-square sidebar-icons"></i>Family</div>
+          <div class="check-lists"><i class="far fa-square sidebar-icons"></i>Vacation Planning</div>
+          <div class="check-lists"><i class="far fa-square sidebar-icons"></i>Buy a new car</div>
+          <div class="check-lists"><i class="far fa-square sidebar-icons"></i>Festival Ideas</div>
+        </div>
+        <div id="work-plannings">
+          <div class="check-lists"><i class="far fa-square sidebar-icons"></i>Work</div>
+          <div class="check-lists"><i class="far fa-square sidebar-icons"></i>Onboarding Plan</div>
+          <div class="check-lists"><i class="far fa-square sidebar-icons"></i>Invoice Review</div>
+          <div class="check-lists"><i class="far fa-square sidebar-icons"></i>Presentation Work</div>
+        </div>
+        <button id="plus-bttn"><i class="fas fa-plus plus-icon"></i></button>
+       </div>
+       <div id="task-section">
+         <h1>Today's Task</h1>
+         <div id="todo-list">
+           <div class="todo-options active"><span class="number">10</span>All</div>
+           <div class="todo-options">Important</div>
+           <div class="todo-options active"><span class="number">5</span>Notes</div>
+           <div class="todo-options active">Links</div>
+         </div>
+         <div class="approving-process">
+         <div class="checkbox-wrapper">
+           <input type="checkbox" id="check1" hidden >
+           <label for="check1" class="check-box"></label>
+         </div>
+         <p>Create Userflow Social Application Design</p>
+         <button class="approved">Approved</button>
+         </div>
+        <div class="approving-process">
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="check2" hidden>
+          <label for="check2" class="check-box"></label>
+          </div>
+          <p>Homepage Design For Slimmuch Product</p>
+         <button class="in-progress">In Progress</button>
+         </div>
+        <div class="approving-process">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check3" hidden>
+            <label for="check3" class="check-box"></label>
+            </div>
+            <p>Interactive prototype design - Web design</p>
+           <button class="in-review">In Review</button>
+         </div>
+        <div class="approving-process">
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="check4" hidden>
+              <label for="check4" class="check-box"></label>
+              </div>
+              <p>Create Application Design For Topbuzz</p>
+             <button class="in-review">In Review</button>
+         </div>
+        <div class="approving-process">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="check5" hidden>
+                <label for="check5" class="check-box"></label>
+                </div>
+                <p>Make a wireframe for Courier Delivery App</p>
+               <button class="in-progress">In Progress</button>
+         </div>
+        <div class="approving-process">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="check6" hidden>
+                  <label for="check6" class="check-box"></label>
+                  </div>
+                  <p>Create Marketplaces Dashboard Design</p>
+                 <button class="waiting">Waiting</button>
+         </div>
+         <div id="upcoming-taskbar"><h2>Upcoming Tasks</h2><i class="fas fa-ellipsis-h upcoming-icon"></i></div>
+         <div class="approving-process">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check6" hidden>
+            <label for="check6" class="check-box"></label>
+            </div>
+            <p>Create Marketplaces Dashboard Design</p>
+           <button class="waiting">Waiting</button>
+         </div>
+         <div class="approving-process">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check6" hidden>
+            <label for="check6" class="check-box"></label>
+            </div>
+            <p>Create Marketplaces Dashboard Design</p>
+           <button class="waiting">Waiting</button>
+         </div>
+         <div class="approving-process">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check6" hidden>
+            <label for="check6" class="check-box"></label>
+            </div>
+            <p>Create Marketplaces Dashboard Design</p>
+           <button class="waiting">Waiting</button>
+         </div>
+         <div class="approving-process">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="check6" hidden>
+            <label for="check6" class="check-box"></label>
+            </div>
+            <p>Create Marketplaces Dashboard Design</p>
+           <button class="waiting">Waiting</button>
+         </div>
+        </div>
+       <div id="schedule-section">
+        <i class="far fa-user contact-icon"></i> <button id="buttn5">5</button>
+        <h2>Meeting Schedule</h2>
+        <div>
+          <div class="meeting-card">
+            <span class="meeting-timing">8:05 AM - 9:20 AM</span><i class="fas fa-ellipsis-v"></i>
+            <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+            <img class="users" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="User Avatar">
+            <img class="users" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User Avatar">
+            <img class="users" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY256_CR5,0,172,256_AL_.jpg" alt="User Avatar">
+            <img class="users" src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=f05c14dd4db49f08a789e6449604c490" alt="User Avatar">
+         </div>
+          <div class="meeting-card">
+          <span class="meeting-timing">8:05 AM - 9:20 AM</span><i class="fas fa-ellipsis-v"></i>
+          <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+         <div class="joining-line"> <img class="users" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="User Avatar">
+            <img class="users" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User Avatar">
+            <button id="joining-status"><i class="fas fa-check"></i> Joined</button></div>
+         </div>
+          <div class="meeting-card">
+          <span class="meeting-timing">8:05 AM - 9:20 AM</span><i class="fas fa-ellipsis-v"></i>
+          <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+          <img class="users" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="User Avatar">
+            <img class="users" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User Avatar">
+            <img class="users" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY256_CR5,0,172,256_AL_.jpg" alt="User Avatar">
+            <img class="users" src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=f05c14dd4db49f08a789e6449604c490" alt="User Avatar">
+         </div>
+         <div class="meeting-card">
+        <span class="meeting-timing">8:05 AM - 9:20 AM</span><i class="fas fa-ellipsis-v"></i>
+        <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+        <div class="joining-line"> <img class="users" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="User Avatar">
+            <img class="users" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User Avatar">
+            <button id="members-status"><i class="fas fa-plus"></i> 13 Members</button></div>
+         </div>
+         <div class="meeting-card">
+          <span class="meeting-timing">8:05 AM - 9:20 AM</span><i class="fas fa-ellipsis-v"></i>
+          <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+          <img class="users" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="User Avatar">
+          <img class="users" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User Avatar">
+          <img class="users" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY256_CR5,0,172,256_AL_.jpg" alt="User Avatar">
+          <img class="users" src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=f05c14dd4db49f08a789e6449604c490" alt="User Avatar">
+         </div>
+         <div class="meeting-card">
+        <span class="meeting-timing">8:05 AM - 9:20 AM</span><i class="fas fa-ellipsis-v"></i>
+        <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+            <div class="joining-line"> <img class="users" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="User Avatar">
+              <img class="users" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User Avatar">
+              <button id="joining-status"><i class="fas fa-check"></i> Joined</button></div>
+         </div>
+         <div class="meeting-card">
+        <span class="meeting-timing">8:05 AM - 9:20 AM</span><i class="fas fa-ellipsis-v"></i>
+        <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+        <img class="users" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="User Avatar">
+      <img class="users" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User Avatar">
+      <img class="users" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY256_CR5,0,172,256_AL_.jpg" alt="User Avatar">
+      <img class="users" src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=f05c14dd4db49f08a789e6449604c490" alt="User Avatar">
+         </div>
+         <div class="meeting-card">
+      <span class="meeting-timing">8:05 AM - 9:20 AM</span><i class="fas fa-ellipsis-v"></i>
+      <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+      <div class="joining-line"> <img class="users" src="https://uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="User Avatar">
+        <img class="users" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User Avatar">
+        <button id="members-status"><i class="fas fa-plus"></i> 13 Members</button></div>
+         </div>
+        </div>
+      </div>
+     </div>
+   </body>
+   </html>
